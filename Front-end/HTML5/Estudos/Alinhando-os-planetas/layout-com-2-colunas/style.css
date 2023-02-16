@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+
+div {
+    border: 1px solid black;
+    height: 96vh;
+}
+
+div:first-child {
+    flex-basis: 25%;
+}
+
+div:last-child {
+    flex: 1;
+}
