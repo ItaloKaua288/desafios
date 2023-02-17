@@ -1,6 +1,150 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+}
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(var(--blue) 49%, var(--blue) 1%, var(--page-background) 49%);
+    overflow: scroll;
+}
+
+section {
+    width: 80vw;
+    margin: auto;
+}
+
+h1, main > p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3em;
+    padding-top: 60px;
+}
+
+main > p {
+    width: 400px;
+    margin: 15px auto;
+}
+
+section {
+    margin-top: 50px;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+
+.baixo-free {
+    position: relative;
+    top: 10px;
+}
+
+.baixo-profissional {
+    position: relative;
+    top: 10px;
+}
+
+.precos {
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #00000038;
+}
+
+.margin {
+    margin: 0 20px;
+}
+
+h2 {
+    font-size: 1em;
+    padding: 20px 20px;
+    color: #40424b;
+}
+
+.container-preco {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.container-preco > p {
+    margin-top: auto;
+}
+
+#preco-maior {
+    font-size: 1.8em;
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+}
+
+#preco-menor {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#preco-claro {
+    color: var(--gray);
+}
+
+.precos > p {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    color: var(--gray);
+}
+
+.desc {
+    margin-bottom: 40px;
+}
+
+.checks {
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+.button-free {
+    margin-top: 70px;
+}
+
+.button-basico {
+    margin-top: 47px;
+} 
+
+.button-profissional {
+    margin-top: 15px;
+} 
+
+#button {
+    margin-bottom: 15px;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section a {
+    text-decoration: none;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    font-weight: 600;
+}
+
+#basico-titulo {
+    background-color: var(--yellow);
+    color: #1d539e;
+    border-radius: 10px 10px 0 0;
 }
