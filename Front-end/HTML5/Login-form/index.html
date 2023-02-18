@@ -7,8 +7,44 @@
     <title>Desafio "Login Form CSS"</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    
+    <main>
+        <section id="formulario">
+            <img src="images/logo.svg" alt="logo">
+            <form action="" method="post">
+                <h1>
+                    <img src="images/log-in.svg" alt="logo-in">
+                    Faça seu login
+                </h1>
+                <p>Entre com suas informações de cadastro.</p>
+                <label for="email" class="block label">E-mail</label>
+                <div id="container-email" class="container-input">
+                    <img id="img-email" src="images/mail.svg" alt="mail">
+                    <input type="email" name="email" id="email" class="block" required autocomplete="email" maxlength="30" placeholder="Digite seu email" onfocus="focusEmail()" onblur="blurEmail()">
+                </div>
+                <label for="pass" class="block">Senha</label>
+                <div id="container-pass" class="container-input">
+                    <img id="img-pass" src="images/lock.svg" alt="lock">
+                    <input type="password" id="pass" class="block" autocomplete="current-password" required min="4" max="8" placeholder="Digite sua senha" onfocus="focusPass()" onblur="blurPass()">
+                    <img src="images/eye.svg" alt="eye">
+                </div>
+                <label onclick="check()" for="remember" id="remember-label">
+                    <span id="remember-span">
+                        <img id="check-img" src="images/check.svg" alt="check">
+                    </span>
+                    <input type="checkbox" name="remember" id="remember">
+                    Lembre-me
+                </label>
+                <a href="#">Esqueci minha senha</a>
+                <input id="entrar" type="submit" value="ENTRAR" class="block">
+                <a href="#">Não tem uma conta? <strong>Registre-se</strong></a>
+            </form>
+            
+        </section>
+        <section id="background">
+        </section>
+    </main>
 </body>
 </html>

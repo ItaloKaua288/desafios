@@ -1,6 +1,175 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+#formulario {
+    width: 100vw;
+}
+
+section > img {
+    margin: 20px 0 0 40px;
+}
+
+#background {
+    display: none;
+}
+
+form {
+    margin: auto;
+    padding: 40px 40px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-title);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+p, label {
+    color: var(--text-base);
+}
+
+form > p {
+    font-weight: 500;
+    margin: 10px 0 30px 0;
+}
+
+.block {
+    display: block;
+}
+
+label {
+    margin: 15px 0 5px 0;
+}
+
+#remember-label, a {
+    display: inline-block;
+    width: calc(50% - 2px);
+}
+
+input#remember {
+    display: none;
+}
+
+span#remember-span {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--text-title);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+#entrar {
+    width: 100%;
+    height: 45px;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+form a {
+    text-align: right;
+}
+
+form a:last-child {
+    width: 100%;
+    text-align: center;
+}
+
+.container-input {
+    display: flex;
+    outline: 2px solid var(--text-title);
+    border-radius: 5px;
+    padding: 2px 6px;
+    background-color: var(--form-background);
+}
+
+#email, #pass {
+    width: calc(100% - 10px);
+    padding: 8px;
+    background-color: var(--form-background);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0;
+    outline: 0;
+    color: var(--primary-color);
+}
+
+#check-img {
+    display: none;
+}
+
+button {
+    position: absolute;
+    top: 361px;
+    left: 450px;
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        display: flex;
+    }
+
+    #background {
+        display: block;
+        width: 50%;
+        background: url(../images/side-image.jpg) no-repeat right;
+    }
+
+    #formulario {
+        width: 50vw;
+        min-width: 500px;
+        padding: 30px;
+    }
+
+    form {
+        background-color: var(--form-background);
+        width: clamp(400px, 100%, 500px);
+        margin: auto;
+        padding: 40px 70px;
+        border-radius: 10px;
+        transform: translateY(-50%);
+        position: relative;
+        top: 50%;
+    }
+
+    section > img {
+        margin: 0;
+    }
 }
