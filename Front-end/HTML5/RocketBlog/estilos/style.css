@@ -49,7 +49,7 @@ li {
     top: 2px;
 }
 
-ul li:first-child {
+ul > li:first-child {
     font-weight: 700;
 }
 
