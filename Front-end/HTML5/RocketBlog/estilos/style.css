@@ -82,7 +82,7 @@ header .container {
     max-width: 500px;
 }
 
-header > section h1 {
+header .container > h1 {
     color: var(--button-bg);
     font-weight: 700;
     font-size: 2.6em;
