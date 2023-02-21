@@ -93,7 +93,7 @@ p {
     line-height: 1.2em;
 }
 
-header > .container p {
+header .container p {
     color: var(--white);
     margin: 25px 0;
     font-size: 1.3em;
