@@ -1,10 +1,9 @@
-
+var cont_dias = 8;
+var cont_horas = 59
+var cont_minutos = 59
+var cont_segundos = 59
 function contagem() {
-    let contador = 100
-    while (contador != 0) {
-        contador -= 1
-        document.getElementById('horas').innerHTML = contador;
-    }
+    
     
 }
     
