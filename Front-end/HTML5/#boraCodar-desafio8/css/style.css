@@ -95,4 +95,20 @@ circle {
     stroke-width: 24;
     stroke-dasharray: 502;
     stroke-dashoffset: 150.6;
+    rotate: 270deg;
+    translate: 13px 185px;
+}
+
+span span {
+    position: absolute;
+    margin: 63px 0 0 70px;
+}
+
+span > span > p:first-child {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#vendas > span > span {
+    margin-top: -50px;
 }
