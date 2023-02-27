@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <main>
+        <div id="sidebar">
+            <div id="sidebar-principal">
+                <div class="container-width">
+                    <a href="#"><img id="logo" src="images/logo.svg" alt="logo"></a>
+                    <img onclick="burguer()" id="burguer" src="images/menu.svg" alt="burguer">
+                </div>
+                <label id="search-label" for="search" class="container-width">
+                    <img id="search-img" src="images/search.svg" alt="search">
+                    <input class="abertos" type="search" name="search" id="search" placeholder="Buscar"></label>
+                <a href="#">
+                    <div class="container-width">
+                        <img src="images/grid.svg" alt="grid">
+                        <p class="abertos">Dashboad</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="container-width">
+                        <img src="images/pet.svg" alt="pet">
+                        <p class="abertos">Pets</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="container-width">
+                        <img src="images/user.svg" alt="user">
+                        <p class="abertos">Clientes</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="container-width">
+                        <img src="images/vet.svg" alt="vet">
+                        <p class="abertos">Vets</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="container-width">
+                        <img src="images/settings.svg" alt="settings">
+                        <p class="abertos">Ajustes</p>
+                    </div>
+                </a>
+            </div>
+            <div id="logout">
+                <img class="abertos" src="images/photo.jpg" alt="photo">
+                <p class="abertos">Maria Aparecida Treinadora</p>
+                <a href="#">
+                    <img id="log-out" src="images/log-out.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
