@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    max-width: 100vw;
+    width: 100vw;
     background: url(../assets/blur-1.png) left bottom no-repeat;
     background-size: cover;
 }
@@ -136,9 +136,14 @@ main > img {
 }
 
 @media screen and (min-width: 600px) {
+    html {
+        max-width: 100vw;
+    }
     body {
         background: url(../assets/blur-1.png) left bottom no-repeat, url(../assets/blur-2.png) right top no-repeat;
+        max-width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     main {
