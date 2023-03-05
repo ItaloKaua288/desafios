@@ -22,10 +22,11 @@ html {
     background-color: var(--backgrond);
     /*height: 530px;*/
     max-width: 100vh;
+    height: 100vh;
 }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     background: url(../assets/blur-1.png) left bottom no-repeat;
     background-size: cover;
 }
