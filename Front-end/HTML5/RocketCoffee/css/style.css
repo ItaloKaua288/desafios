@@ -36,6 +36,7 @@ main {
     max-height: calc(100% - 90px);
     max-height: 100%;
     padding-top: 80px;
+    transition: 1s;
 }
 
 .desktop {
@@ -99,17 +100,20 @@ h1 {
     margin: 0 auto;
 }
 
-a.mobile {
+button.mobile {
     border: 1px solid var(--button);
     padding: 10px 30px;
     border-radius: 10px;
+    display: block;
+    margin: 80px auto;
+}
+
+button.mobile a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 700;
     font-size: .7em;
-    display: inline-block;
-    transform: translateX(-50%);
-    position: relative;
-    left: 50%;
-    margin: 80px 0;
 }
 
 h2 {
@@ -127,12 +131,6 @@ main > img {
     transform: translateX(-50%);
     position: relative;
     left: 50%;
-}
-
-.blur {
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
 }
 
 @media screen and (min-width: 600px) {
