@@ -134,6 +134,7 @@ h2 {
 
 main > img {
     width: 65vw;
+    min-width: 320px;
     transform: translateX(-50%);
     position: relative;
     left: 50%;
