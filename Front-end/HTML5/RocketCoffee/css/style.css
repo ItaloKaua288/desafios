@@ -55,10 +55,10 @@ nav {
 }
 
 ul {
-    opacity: 0;
+    opacity: 1;
     background-color: var(--backgrond);
     width: 100vw;
-    height: 0vh;
+    height: calc(100vh + 160px);
     position: absolute;
     left: 0;
     top: 113px;
