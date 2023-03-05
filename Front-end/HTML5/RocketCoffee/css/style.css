@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--backgrond);
+    /*height: 530px;*/
+}
+
+body {
+    width: 100vw;
+    background: url(../assets/blur-1.png) left bottom no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 100vw;
+    height: calc(100% - 90px);
+    max-height: 100%;
+    padding-top: 80px;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    transition: .2s;
+}
+
+ul {
+    opacity: 0;
+    background-color: var(--backgrond);
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    left: 0;
+    top: 113px;
+    z-index: 999;
+    transition: opacity .5s, height 1s;
+    overflow-y: hidden;
+}
+
+li {
+    list-style: none;
+    color: var(--text-color-menu-mobile);
+    display: block;
+    padding: 15px 30px;
+    border-top: 1px solid var(--border-menu-mobile);
+}
+
+li:hover {
+    border-left: 4px solid var(--button);
+}
+
+ul > li:last-child {
+    border-bottom: 1px solid var(--border-menu-mobile);
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h1 {
+    width: 310px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a.mobile {
+    border: 1px solid var(--button);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: .7em;
+    display: inline-block;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    margin: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#outline {
+    text-shadow: -1px 0 var(--button), 1px 0 0 var(--button), 0 1px var(--button), 0 -1px var(--button);
+    color: black;
+}
+
+main > img {
+    width: 65vw;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
+.blur {
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url(../assets/blur-1.png) left bottom no-repeat, url(../assets/blur-2.png) right top no-repeat;
+        height: 100vh;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav {
+        max-width: 1000px;
+        padding: 20px 80px;
+        margin: 0 auto;
+    }
+
+    ul {
+        position: relative;
+        top: 0;
+        opacity: 1;
+        display: flex;
+        gap: .4em;
+        align-items: center;
+        background-color: transparent;
+        width: auto;
+        height: 20px;
+    }
+
+    ul > li:last-child {
+        border-bottom: 0;
+    }
+
+    li {
+        border: 0;
+        list-style: none;
+        display: inline;
+        padding: 0;
+    }
+
+    button {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    a.mobile {
+        display: none;
+    }
+
+    a.desktop {
+        border: 1px solid var(--button);
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: .7em;
+        display: inline-block;
+    }
+
+    main > img {
+        max-width: 650px;
+    }
+}
