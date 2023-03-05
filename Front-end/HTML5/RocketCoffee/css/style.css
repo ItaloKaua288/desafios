@@ -140,7 +140,7 @@ main > img {
     body {
         background: url(../assets/blur-1.png) left bottom no-repeat, url(../assets/blur-2.png) right top no-repeat;
         max-width: 100vw;
-        height: 100vh;
+        height: calc(100vh + 24px);
         overflow-x: hidden;
     }
 
@@ -163,7 +163,7 @@ main > img {
         top: 0;
         opacity: 1;
         display: flex;
-        gap: .4em;
+        gap: 1em;
         align-items: center;
         background-color: transparent;
         width: auto;
@@ -193,7 +193,7 @@ main > img {
         display: none;
     }
 
-    a.mobile {
+    button.mobile {
         display: none;
     }
 
