@@ -21,6 +21,7 @@
 html {
     background-color: var(--backgrond);
     /*height: 530px;*/
+    height: 100vh;
 }
 
 body {
