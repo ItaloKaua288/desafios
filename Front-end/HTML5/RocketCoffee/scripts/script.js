@@ -2,7 +2,6 @@ function burguer() {
     const burguerImg = document.getElementById('img-burguer')
     const menu = document.getElementById('menu')
     const main = document.getElementById('main')
-    const body = document.getElementById('body')
 
     if (menu.style.opacity == '1') {
         menu.style.opacity = '0'

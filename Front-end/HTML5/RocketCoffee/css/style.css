@@ -84,11 +84,6 @@ ul > li:last-child {
     border-bottom: 1px solid var(--border-menu-mobile);
 }
 
-button {
-    background-color: transparent;
-    border: 0;
-}
-
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -100,15 +95,26 @@ h1 {
     margin: 0 auto;
 }
 
-button.mobile {
+.mobile {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+}
+
+header button {
+    border: 0;
+}
+
+main button {
     border: 1px solid var(--button);
     padding: 10px 30px;
     border-radius: 10px;
-    display: block;
     margin: 80px auto;
 }
 
-button.mobile a {
+main button.mobile a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -181,19 +187,11 @@ main > img {
         padding: 0;
     }
 
-    button {
-        display: none;
-    }
-
     .desktop {
         display: block;
     }
 
     .mobile {
-        display: none;
-    }
-
-    button.mobile {
         display: none;
     }
 
