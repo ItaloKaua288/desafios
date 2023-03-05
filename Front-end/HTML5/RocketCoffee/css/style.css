@@ -134,7 +134,7 @@ main > img {
     z-index: -1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     body {
         background: url(../assets/blur-1.png) left bottom no-repeat, url(../assets/blur-2.png) right top no-repeat;
         height: 100vh;
