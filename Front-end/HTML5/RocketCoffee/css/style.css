@@ -33,7 +33,7 @@ body {
 
 main {
     width: 100vw;
-    height: calc(100% - 90px);
+    max-height: calc(100% - 90px);
     max-height: 100%;
     padding-top: 80px;
 }
@@ -58,7 +58,7 @@ ul {
     opacity: 0;
     background-color: var(--backgrond);
     width: 100vw;
-    height: 200vh;
+    height: 0vh;
     position: absolute;
     left: 0;
     top: 113px;
