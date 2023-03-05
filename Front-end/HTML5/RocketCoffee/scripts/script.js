@@ -7,7 +7,7 @@ function burguer() {
         burguerImg.src = 'assets/menu-buguer-close.svg'
     } else {
         menu.style.opacity = '1'
-        menu.style.height = '200vh'
+        menu.style.height = '100vh'
         burguerImg.src = 'assets/menu-buguer-open.svg'
     }
 }
