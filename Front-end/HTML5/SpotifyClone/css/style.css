@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --background-color: #0D0D0D;
+    --background-color2: #1E1E1E;
+    --text-color-gray: #b1aeae;
+    --text-color-white: #FFFFFF;
+    --gradient-1: #302FA6;
+    --gradient-2: #7C939A;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+body, html, main {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    background-color: var(--background-color2);
+}
+
+a {
+    text-decoration: none;
+}
+
+#sidebar {
+    width: 240px;
+    height: 100vh;
+    padding: 25px 25px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+#sidebar ul:nth-child(2) > li:first-child a, #lang a{
+    color: white;
+}
+
+#lang a {
+    width: 180px;
+    border: 1px solid var(--text-color-white);
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#lang p {
+    font-size: .8em;
+}
+
+#sidebar ul a {
+    color: var(--text-color-gray);
+}
+
+#cross-svg, #heart-svg {
+    width: 23px;
+    height: 23px;
+    padding: 6px;
+}
+
+#cross-svg {
+    background-color: var(--text-color-gray);
+}
+
+#heart-svg {
+    background: linear-gradient(127deg,var(--gradient-1), var(--gradient-2));
+}
+
+li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+p {
+    color: var(--text-color-gray);
+}
+
+#principal {
+    width: calc(100% - 244px);
+    height: 100vh;
+    display: inline-block;
+    padding: 80px 30px;
+    overflow-y: scroll;
+    background: linear-gradient(var(--background-color2), var(--background-color));
+}
+
+#principal::-webkit-scrollbar {
+    width: 0;
+}
+
+#principal nav {
+    width: calc(100% - 240px);
+    height: 65px;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#principal nav a:first-child {
+    color: var(--text-color-white);
+}
+
+#principal nav a:last-child {
+    color: black;
+    font-weight: 600;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: var(--text-color-white);
+    border-radius: 25px;
+}
+
+nav div:first-child {
+    display: flex;
+    gap: 1em;
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #0D0D0D;
+    border-radius: 50%;
+}
+
+#buttons-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.2em;
+}
+
+#principal section:last-child .container {
+    justify-content: left;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section header a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color-gray);
+}
+
+h1 {
+    color: var(--text-color-white);
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 10px;
+}
+
+.card {
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 288px;
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #363636;
+}
+
+.play-svg {
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    padding: 13px;
+    background-color: #1ec458;
+    border-radius: 50%;
+    position: relative;
+    top: -136px;
+    left: 67%;
+    transition: opacity .5s, top .5s;
+}
+
+.play-svg:hover {
+    opacity: 1;
+    scale: 105%;
+    background-color: #22dd64;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #00000096;
+}
+
+.card h2 {
+    color: var(--text-color-white);
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: .9em;
+    line-height: 1.5em;
+    max-height: 50px;
+}
+
+#lateralbar {
+    width: 14px;
+    height: 260px;
+    position: absolute;
+    top: 67px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.267);
+    opacity: .5;
+    transition: opacity .3s;
+}
+
+
+#delimit {
+    width: 240px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
